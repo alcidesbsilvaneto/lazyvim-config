@@ -7,6 +7,12 @@ map("n", "<leader>nl", function()
   require("noice").cmd("dismiss")
 end)
 
+local opts = { noremap = true, silent = true }
+map("n", "<C-h>", "<C-w>h", opts)
+map("n", "<C-j>", "<C-w>j", opts)
+map("n", "<C-k>", "<C-w>k", opts)
+map("n", "<C-l>", "<C-w>l", opts)
+
 -- Select all
 map("n", "<C-a>", "ggVG")
 
@@ -38,3 +44,6 @@ map("i", "<C-f>", function()
   end, 100)
   vim.keymap.set("n", "q", ":close<CR>", { buffer = true })
 end)
+
+-- Move panes matching tmux
+--

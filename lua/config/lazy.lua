@@ -21,7 +21,7 @@ require("lazy").setup({
     lazy = false,
     version = false, -- always use the latest git commit
   },
-  install = { colorscheme = { "dracula", "tokyonight", "habamax" } },
+  install = { colorscheme = { "oxocarbon", "dracula", "tokyonight", "habamax" } },
   checker = { enabled = true },
   performance = {
     rtp = {

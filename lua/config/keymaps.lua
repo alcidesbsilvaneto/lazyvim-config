@@ -29,7 +29,7 @@ local diagnostic_goto = function(next, severity)
   end
 end
 
-map("n", "<leader>l", "vim.NIL")
+map("n", "<leader>l", "vim.NIL", { desc = "LSP Diganostics" })
 map("n", "<leader>lj", diagnostic_goto(true), { desc = "Next Diagnostic" })
 map("n", "<leader>lk", diagnostic_goto(false), { desc = "Prev Diagnostic" })
 map("n", "<leader>td", vim.lsp.buf.definition, { desc = "Go to Definition" })
